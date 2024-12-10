@@ -45,4 +45,4 @@ Height anomaly on the geoid is equal to the geoid undulation, that is, the geoid
     1.4.1 Format convention for geodetic data file
     7.9.1 Stokes and Hotine integral formulas outside geoid
     7.1(4) Low-dgree Legendre function and its first and second derivative algorithms
-The rar compression package in the attachment includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable file and all input and output data.
+DOS executable test file and all input and output data.
