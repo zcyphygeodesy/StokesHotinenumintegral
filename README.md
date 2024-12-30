@@ -7,6 +7,7 @@ Height anomaly on the geoid is equal to the geoid undulation, that is, the geoid
     The Stokes boundary value theory requires that the boundary surface should be an equipotential surface, that is, the gravity anomaly/disturbance should be on the equipotential surface.
     It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.
     The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.
+![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg7_zltwYoqNzxqwEwpQ047gg.jpg)
 ## [Main program for test entrance]
     StokesHotinenumintegral.f90
     The record format of the input calculation point file: ID (point no / point name), longitude (decimal degrees), latitude (decimal degrees), ellipsoidal height (m)......
@@ -46,3 +47,4 @@ Height anomaly on the geoid is equal to the geoid undulation, that is, the geoid
     7.9.1 Stokes and Hotine integral formulas outside geoid
     7.1(4) Low-dgree Legendre function and its first and second derivative algorithms
 The zip compression package includes the test project in visual studio 2017 - intel fortran integrated environment, DOS executable test file and all input and output data.
+![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg8OzltwYoiNSwCjClDTjuCA.jpg)
