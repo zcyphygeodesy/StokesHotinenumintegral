@@ -1,12 +1,12 @@
 ## Fortran codes for height anomaly computation on or outside geoid using Stokes/Hotine numerical integral
 https://www.zcyphygeodesy.com/en/h-nd-133.html
 ## [Algorithm purpose]
-    Using the generalized Stokes/Hotine numerical integral, from the ellipsoidal height grid of the equipotential surface and gravity anomaly or disturbance (mGal) grid on the surface, compute the height anomaly (m) on or outside the geoid.
-    Here the equipotential boundary surface does not need to be the geoid, which can be any equipotential (or normal/orthometric equiheight) surface. E.g., the ground residual height anomaly can be calculated from the residual gravity anomaly / disturbance on the equipotential surface outside the ground.
-Height anomaly on the geoid is equal to the geoid undulation, that is, the geoidal (ellipsoidal) height.
-    The Stokes boundary value theory requires that the boundary surface should be an equipotential surface, that is, the gravity anomaly/disturbance should be on the equipotential surface.
-    It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.
-    The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.
+&emsp;```Using the generalized Stokes/Hotine numerical integral, from the ellipsoidal height grid of the equipotential surface and gravity anomaly or disturbance (mGal) grid on the surface, compute the height anomaly (m) on or outside the geoid.```  
+&emsp;```Here the equipotential boundary surface does not need to be the geoid, which can be any equipotential (or normal/orthometric equiheight) surface. E.g., the ground residual height anomaly can be calculated from the residual gravity anomaly / disturbance on the equipotential surface outside the ground.```  
+&emsp;```Height anomaly on the geoid is equal to the geoid undulation, that is, the geoidal (ellipsoidal) height.```  
+&emsp;```The Stokes boundary value theory requires that the boundary surface should be an equipotential surface, that is, the gravity anomaly/disturbance should be on the equipotential surface.```  
+&emsp;```It is usually necessary to employ the remove-restore scheme with a reference geopotential model to use the finite radius for gravity field integral. Firstly, remove model gravity anomaly/disturbance on the boundary surface, then integrate to obtain the residual height anomaly at the calculation point, and finally restore the model height anomaly at the calculation point.```  
+&emsp;```The equipotential surface can be constructed from a global geopotential model (not greater than 360 degrees), which can also be represent by a normal (orthometric) equiheight surface with the altitude of not more than ten kilometers.```
 ![](https://24192633.s21i.faiusr.com/2/ABUIABACGAAg7_zltwYoqNzxqwEwpQ047gg.jpg)
 ## [Main program for test entrance]
     StokesHotinenumintegral.f90
